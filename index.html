@@ -2,304 +2,399 @@
 <html lang="pt-br">
 
 <head>
-    <title>movie CLUB</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>movie CLUB</title>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/119554adfb.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="logo.png" alt="" width="30" height="24"> movie CLUB
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="imagens/logo.png" alt="" width="30" height="24"> movie CLUB
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedC:wontent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Search">
-                    </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedC:wontent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Em Destaque</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Avaliações</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entrevistas & Makingof</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Novidades</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="bg-light">
+    <!-- lançamentos -->
+    <section id="lancamentos">
+      <h1 class="text-center py-3 py-lg-5m-0">Lançamentos</h1>
+      <div id="trailers-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active pb-5">
+            <div class="container-fluid row px-6 m-0">
+
+              <div class="col-12 col-lg-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Y3EU7AF23aE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
                 </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <h3>Lightyear</h3>
+                <p class="pt-1">
+                  <span class="fw-bold">Sinopse: </span> Todo herói tem um ponto de partida. 👨‍🚀 Vem aí uma aventura
+                  intergaláctica sem precedentes. #Lightyear da Disney e Pixar, em 16 de junho. 🌌💫
+                </p>
+                <div class="container-fluid row px-0">
+
+                  <span class="col"><span class="fw-bold">Diretor: </span>Angus MacLane</span>
+                  <span class="col "><span class="fw-bold">Roteiro: </span>Pete Docter</span>
+                  <span class="col-3"><span class="fw-bold">Estreia: </span>2022</span>
+
+                </div>
+                <p class="fw-bold pt-1">Elenco:</p>
+                <div class="container-fluid p-0 m-0">
+                  <span class="text-start">Chris Evans | Uzo Aduba | Keke Palmer | Peter Sohn</span>
+                </div>
+                <p class="fw-bold pt-3">Avaliação: <i class="fa-solid fa-star"></i></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star-half-stroke"></i></p>
+              </div>
             </div>
-        </nav>
-    </header>
+          </div>
+          <div class="carousel-item pb-5">
+            <div class="container-fluid row px-6 m-0">
 
-    <main class="bg-light">
-        <section>
-            <h1 class="text-center py-3 py-lg-5 bg-light m-0">Lançamentos</h1>
-            <div id="trailers-carousel" class="carousel slide bg-light carousel-dark" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <div class="col-12 col-lg-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dS5Jdqa5woU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active pb-5">
-                        <div class="container-fluid row px-6 m-0">
+              </div>
 
-                            <div class="col-12 col-lg-6">
-                                <div class="ratio ratio-16x9">
-                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O5rXlNRjyUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
+              <div class="col-12 col-lg-6">
+                <h3>Godzilla vs Kong</h3>
+                <p class="pt-1">
+                  <span class="fw-bold">Sinopse: </span>Lendas em rota de colisão. Godzilla e Kong, as duas forças mais
+                  poderosas da natureza, se confrontam em uma batalha espetacular. Conforme a Monarch embarca em uma
+                  perigosa missão
+                  em uma fantástica terra desconhecida e desvenda pistas sobre as origens dos titãs, uma conspiração
+                  ameaça aniquilar para sempre as criaturas da face da terra.
+                </p>
+                <div class="container-fluid row px-0">
 
-                            <div class="col-12 col-lg-6">
-                                <h3>The Matrix Resurrections</h3>
-                                <p class="pt-1">
-                                    <span class="fw-bold">Sinopse: </span> Matrix: Resurrections é o novo filme da franquia Matrix, continuando a saga de Neo (Keanu Reeves) em sua busca pela libertação das pessoas aprisionadas mentalmente pelas máquinas.
-                                    Se passando 20 anos após os acontecimentos de de Matrix Revolutions, Neo vive uma vida aparentemente comum sob sua identidade original como Thomas A. Anderson em São Francisco, Califórnia, com um terapeuta que lhe prescreve
-                                    pílulas azuis para neutralizar as coisas estranhas e não naturais que ele ocasionalmente vislumbra em sua mente. Ele também conhece uma mulher que parece ser Trinity (Carrie Anne-Moss), mas nenhum deles se reconhece.
-                                    No entanto, quando uma nova versão de Morpheus oferece a ele a pílula vermelha e reabre sua mente para o mundo da Matrix, que se tornou mais seguro e perigoso nos anos desde a infecção de Smith, Neo volta a se juntar
-                                    a um grupo de rebeldes para lutar contra um novo e mais perigoso inimigo e livrar todos da Matrix novamente.
-                                </p>
-                                <div class="container-fluid row px-0">
+                  <span class="col"><span class="fw-bold">Diretor: </span>Adam Wingard</span>
+                  <span class="col "><span class="fw-bold">Roteiro: </span>Zach Shields</span>
+                  <span class="col-3"><span class="fw-bold">Estreia: </span>2021</span>
 
-                                    <span class="col"><span class="fw-bold">Diretor: </span>Nome do Diretor</span>
-                                    <span class="col "><span class="fw-bold">Roteiro: </span>Nome do Roteirista</span>
-                                    <span class="col-3"><span class="fw-bold">Estreia: </span>2020</span>
-
-                                </div>
-                                <p class="fw-bold pt-1">Elenco:</p>
-                                <div class="container-fluid p-0 m-0">
-                                    <span class="text-start">Nome do ator 1 | Nome do ator 2 | Nome do ator 3 | Nome do ator 4</span>
-                                </div>
-                                <p class="fw-bold pt-3">Avaliação: </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item pb-5">
-                        <div class="container-fluid row px-6 m-0">
-
-                            <div class="col-12 col-lg-6">
-                                <div class="ratio ratio-16x9">
-                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dS5Jdqa5woU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <h3>Godzilla vs Kong</h3>
-                                <p class="pt-1">
-                                    <span class="fw-bold">Sinopse: </span>Lendas em rota de colisão. Godzilla e Kong, as duas forças mais poderosas da natureza, se confrontam em uma batalha espetacular. Conforme a Monarch embarca em uma perigosa missão
-                                    em uma fantástica terra desconhecida e desvenda pistas sobre as origens dos titãs, uma conspiração ameaça aniquilar para sempre as criaturas da face da terra.
-                                </p>
-                                <div class="container-fluid row px-0">
-
-                                    <span class="col"><span class="fw-bold">Diretor: </span>Nome do Diretor</span>
-                                    <span class="col "><span class="fw-bold">Roteiro: </span>Nome do Roteirista</span>
-                                    <span class="col-3"><span class="fw-bold">Estreia: </span>2020</span>
-
-                                </div>
-                                <p class="fw-bold pt-1">Elenco:</p>
-                                <div class="container-fluid p-0 m-0">
-                                    <span class="text-start">Nome do ator 1 | Nome do ator 2 | Nome do ator 3 | Nome do ator 4</span>
-                                </div>
-                                <p class="fw-bold pt-3">Avaliação: </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item pb-5">
-                        <div class="container-fluid row px-6 m-0">
-
-                            <div class="col-12 col-lg-6">
-                                <div class="ratio ratio-16x9">
-                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6SiWdN7Llno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6">
-                                <h3>Bob Esponja: O Filme</h3>
-                                <p class="pt-1">
-                                    <span class="fw-bold">Sinopse: </span>Mergulhe nesta comédia de aventura, que é maior, melhor e mais envolvente que todas as outras: o filme de estréia desta sensação submarina, que é Bob Esponja! Um grande problema
-                                    borbulha na Fenda do Bikini. A coroa do Rei Netuno desapareceu e o Sr. Sirigueijo foi acusado de roubá-la! Junto com seu melhor amigo Patrick, Bob Esponja vai para a traiçoeira Shell City recuperar a coroa de Netuno
-                                    e salvar o sr. Sirigueijo, em uma espetacular aventura repleta de "ação em alto nível de profundidade e muitos risos!"*
-                                </p>
-                                <div class="container-fluid row px-0">
-
-                                    <span class="col"><span class="fw-bold">Diretor: </span>Nome do Diretor</span>
-                                    <span class="col "><span class="fw-bold">Roteiro: </span>Nome do Roteirista</span>
-                                    <span class="col-3"><span class="fw-bold">Estreia: </span>2020</span>
-
-                                </div>
-                                <p class="fw-bold pt-1">Elenco:</p>
-                                <div class="container-fluid p-0 m-0">
-                                    <span class="text-start">Nome do ator 1 | Nome do ator 2 | Nome do ator 3 | Nome do ator 4</span>
-                                </div>
-                                <p class="fw-bold pt-3">Avaliação: </p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <p class="fw-bold pt-1">Elenco:</p>
+                <div class="container-fluid p-0 m-0">
+                  <span class="text-start"> Alexander Skarsgård | Millie Bobby Brown | Rebecca Hall</span>
+                </div>
+                <p class="fw-bold pt-3">Avaliação: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
+                    class="fa-regular fa-star"></i></p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="carousel-item pb-5">
+            <div class="container-fluid row px-6 m-0">
 
-        <section class="px-5 container-fluid">
-            <div class="d-flex flex-wrap justify-content-center justify-content-md-between justify-content-lg-between align-items-center ">
-                <h1 class="py-3">Em destaque</h1>
-                <div class="dropdown">
-                    <button class="btn btn-light btn-outline-dark dropdown-toggle fw-bold" type="button" id="dropdownCategorias" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="col-12 col-lg-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6SiWdN7Llno"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <h3>Bob Esponja: O Filme</h3>
+                <p class="pt-1">
+                  <span class="fw-bold">Sinopse: </span>Após a coroa do Rei Netuno ser roubada, Bob Esponja e seu melhor
+                  amigo Patrick partem em uma viagem pela Fenda do Bikini para reencontrá-la. No caminho eles precisam
+                  enfrentar monstros marinhos, vilões perigosos e vários bandidos.
+                </p>
+                <div class="container-fluid row px-0">
+
+                  <span class="col"><span class="fw-bold">Diretor: </span>Stephen Hillenburg</span>
+                  <span class="col "><span class="fw-bold">Roteiro: </span>Stephen Hillenburg</span>
+                  <span class="col-3"><span class="fw-bold">Estreia: </span>2004</span>
+
+                </div>
+                <p class="fw-bold pt-1">Elenco:</p>
+                <div class="container-fluid p-0 m-0">
+                  <span class="text-start">David Hasselhoff | Tom Kenny | Bill Fagerbakke</span>
+                </div>
+                <p class="fw-bold pt-3">Avaliação: <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- em destaque -->
+    <section id="em_destaque" class="px-5 container-fluid">
+      <div
+        class="d-flex flex-wrap justify-content-center justify-content-md-between justify-content-lg-between align-items-center ">
+        <h1 class="py-3">Em destaque</h1>
+        <div class="dropdown">
+          <button class="btn btn-light btn-outline-dark dropdown-toggle fw-bold" type="button" id="dropdownCategorias"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Categoria: TODOS
           </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownCategorias">
-                        <li><a class="dropdown-item" href="#">Aventura</a></li>
-                        <li><a class="dropdown-item" href="#">Romance</a></li>
-                        <li><a class="dropdown-item" href="#">Comédia</a></li>
-                    </ul>
-                </div>
-            </div>
+          <ul class="dropdown-menu" aria-labelledby="dropdownCategorias">
+            <li><a class="dropdown-item" href="#">Aventura</a></li>
+            <li><a class="dropdown-item" href="#">Romance</a></li>
+            <li><a class="dropdown-item" href="#">Comédia</a></li>
+          </ul>
+        </div>
+      </div>
 
-            <div class="pt-3 d-flex flex-wrap flex-lg-nowrap">
-                <div class="card p-1">
-                    <img src="poster.jpg" class="card-img-top" alt="Poster">
-                </div>
-                <div class="card p-1 ">
-                    <img src="poster.jpg" class="card-img-top" alt="Poster">
-                </div>
-                <div class="card p-1 ">
-                    <img src="poster.jpg" class="card-img-top" alt="Poster">
-                </div>
-                <div class="card p-1 ">
-                    <img src="poster.jpg" class="card-img-top" alt="Poster">
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-lg-end justify-content-center pt-3">
-                <button type="button" class="btn btn-dark">Carregar mais filmes</button>
-            </div>
-        </section>
-
-        <section class="px-5 pt-3">
-            <h1 class="text-start">Últimas avaliações</h1>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="row">
-                            <div class="col-3"><img class="img-fluid" src="pp.png" alt="Foto de perfil"></div>
-                            <div class="col-9">
-                                <h3 class="text-start py-3">Nome do Avaliador</h3>
-                                <p>
-                                    <span class="fw-bold ">Avaliação: </span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam
-                                    corporis suscipit laboriosam.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="row">
-                            <div class="col-3"><img class="img-fluid" src="pp.png" alt="Foto de perfil"></div>
-                            <div class="col-9">
-                                <h3 class="text-start py-3">Nome do Avaliador</h3>
-                                <p>
-                                    <span class="fw-bold ">Avaliação: </span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam
-                                    corporis suscipit laboriosam.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="row">
-                            <div class="col-3"><img class="img-fluid" src="pp.png" alt="Foto de perfil"></div>
-                            <div class="col-9">
-                                <h3 class="text-start py-3">Nome do Avaliador</h3>
-                                <p>
-                                    <span class="fw-bold ">Avaliação: </span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam
-                                    corporis suscipit laboriosam.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-center justify-content-lg-end pt-3">
-                <button type="button" class="btn btn-dark">Carregar mais avaliações</button>
-            </div>
-        </section>
-
-
-
-        <section class="bg-light container-fluid px-5">
-            <h1 class="text-start py-3">Entrevistas & Making of</h1>
-            <div class="container-fluid justify-content-between">
-                <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6pKJRAOqAGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p class="fs-3 py-2"><span class="fw-bold">Filme: </span>Nome do filme</p>
-                        <p class="my-0"><span class="fw-bold">Diretor: </span>Nome do Diretor</p>
-                        <p class="my-0"><span class="fw-bold">Roteiro: </span>Nome do Diretor<span class="fw-bold">
-                Estreia: </span>2020</p>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6pKJRAOqAGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p class="fs-3 py-2"><span class="fw-bold">Filme: </span>Nome do filme</p>
-                        <p class="my-0"><span class="fw-bold">Diretor: </span>Nome do Diretor</p>
-                        <p class="my-0"><span class="fw-bold">Roteiro: </span>Nome do Diretor<span class="fw-bold">
-              Estreia: </span>2020</p>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                        <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6pKJRAOqAGw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <p class="fs-3 py-2"><span class="fw-bold">Filme: </span>Nome do filme</p>
-                        <p class="my-0"><span class="fw-bold">Diretor: </span>Nome do Diretor</p>
-                        <p class="my-0"><span class="fw-bold">Roteiro: </span>Nome do Diretor<span class="fw-bold">
-                Estreia: </span>2020</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="d-flex justify-content-center justify-content-lg-end pt-3">
-                <button type="button" class="btn btn-dark">Carregar mais entrevistas</button>
-            </div>
-        </section>
-
-        <section class="container-fluid p-5">
+      <div class="pt-3 d-flex justify-content-between flex-wrap flex-lg-nowrap">
+        <div class="p-2 mt-3">
+          <img src="imagens/poster1.jpg" class="img-fluid" alt="Poster">
+        </div>
+        <div class="p-2 mt-3">
+          <img src="imagens/poster2.jpg" class="img-fluid" alt="Poster">
+        </div>
+        <div class="p-2 mt-3">
+          <img src="imagens/poster3.jpg" class="img-fluid" alt="Poster">
+        </div>
+        <div class="p-2 mt-3">
+          <img src="imagens/poster4.jpg" class="img-fluid" alt="Poster">
+        </div>
+      </div>
+      <!-- botão -->
+      <div class="d-flex justify-content-lg-end justify-content-center pt-3">
+        <button type="button" class="btn btn-outline-dark fw-bold">Carregar mais filmes</button>
+      </div>
+    </section>
+    <!-- avaliações -->
+    <section id="avaliacoes" class="px-5 pt-3">
+      <h1 class="text-start">Últimas avaliações</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-4">
             <div class="row">
-                <div class="col-8">
-                    <h1 class="text-start py-3">Novidades</h1>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="poster.jpg" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-8">
-                                <h3 class="text-start">Título da matéria</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis quam at lorem fermentum, sit amet tempus odio pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut
-                                    vestibulum, enim a pharetra eleifend, velit justo blandit dolor, non eleifend justo ante vitae lorem. Suspendisse iaculis quam ac est bibendum ullamcorper. Ut bibendum dapibus nisi
-                                </p>
-                                <div class="d-flex">
-                                    <span class="badge rounded-pill bg-primary">hollywood</span>
-                                    <span class="badge rounded-pill bg-primary offset-1">hollywood</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 bg-primary">b</div>
+              <div class="col-3"><img class="img-fluid rounded-circle bg-danger" src="imagens/pp1.png" alt="Foto de perfil">
+              </div>
+              <div class="col-9">
+                <h3 class="text-start py-3">Rodrigo Gomes</h3>
+                <p>
+                  <span class="fw-bold ">Avaliação: </span>Bom filme! Muita ação com efeitos bem feitos, entretém seu
+                  público alvo, roteiro assim como o filme anterior é o ponto baixo, com furos claros, elenco é bom, mas
+                  nada de excepcional. Entretenimento garantido.
+
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <div class="col-3"><img class="img-fluid rounded-circle bg-dark" src="imagens/pp2.png" alt="Foto de perfil"></div>
+              <div class="col-9">
+                <h3 class="text-start py-3">Maria</h3>
+                <p>
+                  <span class="fw-bold ">Avaliação: </span>Excelente performance de Jim Carrey como o excêntrico Dr. Robotnik. O filme consegue superar o seu antecessor, ampliando a mitologia do personagem e trazendo mais emoção e ação para as suas cenas. Excelente opção para a família!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="row">
+              <div class="col-3"><img class="img-fluid rounded-circle bg-primary" src="imagens/pp3.png" alt="Foto de perfil">
+              </div>
+              <div class="col-9">
+                <h3 class="text-start py-3">Giovane</h3>
+                <p>
+                  <span class="fw-bold ">Avaliação: </span>Um realista e chocante retrato de como a máfia agia nos anos 40. Uma obra-prima de valor incalculável. Marlon Brando em uma perfeita atuação, deixando um marco no cinema como um dos personagens mais respeitados e aclamados pelo público e pela crítica.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center justify-content-lg-end pt-3">
+        <button type="button" class="btn btn-dark">Carregar mais avaliações</button>
+      </div>
+    </section>
+    <!-- entrevistas e making of -->
+    <section id="entrevistas" class="bg-light container-fluid px-5">
+      <h1 class="text-start py-3">Entrevistas & Making of</h1>
+      <div class="container-fluid justify-content-between">
+        <div class="row">
+          <!-- entrevista 1 -->
+          <div class="col-12 col-lg-4">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LMZPnwz_dT0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p class="fs-3 py-2"><span class="fw-bold">Filme: </span>Homem-Aranha: Sem Volta para Casa</p>
+            <p class="my-0"><span class="fw-bold">Diretor: </span>Jon Watts</p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <span><span class="fw-bold">Roteiro: </span>Chris McKenna</span>
+              <span class="pe-5"><span class="fw-bold">Estreia: </span>2021</span>
+            </div>
+          </div>
+          <!-- entrevista 2 -->
+          <div class="col-12 col-lg-4">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-4zVqbFoJoA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p class="fs-3 py-2"><span class="fw-bold">Filme: </span>It - Capítulo 2</p>
+            <p class="my-0"><span class="fw-bold">Diretor: </span>Andy Muschietti</p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <span><span class="fw-bold">Roteiro: </span>Stephen King</span>
+              <span class="pe-5"><span class="fw-bold">Estreia: </span>2019</span>
+            </div>
+          </div>
+          <!-- entrevista 3 -->
+          <div class="col-12 col-lg-4">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7EWLeynJ5_w"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p class="fs-3 py-2"><span class="fw-bold">Filme: </span>Moana - Um Mar de Aventuras</p>
+            <p class="my-0"><span class="fw-bold">Diretor: </span>John Musker</p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <span><span class="fw-bold">Roteiro: </span>Ron Clements</span>
+              <span class="pe-5"><span class="fw-bold">Estreia: </span>2017</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center justify-content-lg-end pt-3">
+        <button type="button" class="btn btn-dark">Carregar mais entrevistas</button>
+      </div>
+    </section>
+    <!-- novidades -->
+    <section id="novidades" class="container-fluid p-5">
+      <div class="row">
+        <!-- novidades -->
+        <div class="col-12 col-lg-8">
+          <h1 class="text-start py-3">Novidades</h1>
+          <div class="container-fluid px-0">
+            <!-- novidade 1 -->
+            <div class="row py-4 border-bottom border-3 border-secondary">
+              <div class="col-12 col-lg-4 text-center">
+                <img src="imagens/novidade1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-8">
+                <h5 class="text-start pt-2">Katherine Waterston está em Animais Fantásticos 3? Rumores apontam represália
+                  contra atriz que faz Tina Goldstein</h5>
+                <p>Tina Goldstein, interpretada por Katherine Waterston, não apareceu nas prévias e trailers de Animais
+                  Fantásticos 3.
+                </p>
+                <div class="d-flex">
+                  <span class="badge rounded-pill bg-primary">hollywood</span>
+                  <span class="badge rounded-pill bg-warning ms-2">harry potter</span>
+                </div>
+              </div>
+            </div>
+            <!-- novidade 2 -->
+            <div class="row py-4 border-bottom border-3 border-secondary">
+              <div class="col-12 col-lg-4 text-center">
+                <img src="imagens/novidade2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-8">
+                <h5 class="text-start pt-2">Marvel derrota DC em disputa importante: Doutor Estranho 2 desbanca Batman na pré-venda de ingressos</h5>
+                <p>Doutor Estranho 2 de Benedict Cumberbatch bateu números de Batman de Robert Pattinson na venda de ingressos antecipados.</p>
+                <div class="d-flex">
+                  <span class="badge rounded-pill bg-danger">marvel</span>
+                  <span class="badge rounded-pill bg-success ms-2">DC</span>
+                </div>
+              </div>
+            </div>
+            <!-- novidade 3 -->
+            <div class="row py-4">
+              <div class="col-12 col-lg-4 text-center">
+                <img src="imagens/novidade3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-8">
+                <h5 class="text-start pt-2">Sonic 2: Cena pós-crédito introduz enredo do terceiro filme com AQUELE personagem</h5>
+                <p>Com Jim Carrey e James Marsden, o segundo filme do ouriço da Sega entrega uma produção lotada de nostalgia.</p>
+                <div class="d-flex">
+                  <span class="badge rounded-pill bg-info">games</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sobre -->
+        <div class="col-12 col-lg-4 ps-4">
+          <h1 class="text-start py-3">Sobre</h1>
+          <p>Sint libero voluptatibus officiis iste aperiam ratione eligendi qui. Sed et laudantium consequuntur nam sunt accusamus. Perferendis non voluptas temporibus magni neque. Autem inventore et asperiores laudantium voluptates. Molestias velit maiores repellendus et. Rerum laboriosam eos cum iure et est dolores.
+
+            Quia quo adipisci architecto aliquam quaerat et et quibusdam. Alias consequuntur quidem voluptatem mollitia ipsum non quibusdam. Fuga corrupti animi sed aut magnam at cumque nemo.
+          </p>
+          <h1 class="text-start">Editorial</h1>
+          <p><i class="fa-solid fa-user me-2"></i><span class="fw-bold">Redação: </span>Pedro Francisco</p>
+          <p><i class="fa-solid fa-user me-2"></i><span class="fw-bold">Pesquisa: </span>Pedro Francisco</p>
+          <p><i class="fa-solid fa-user me-2"></i><span class="fw-bold">Gerente Geral: </span>Pedro Francisco</p>
+          <p class="fw-bold fs-4 text-start">redes sociais:</p>
+          <i class="fa-brands fa-facebook-square fs-1"></i><i class="fa-brands fa-twitter ps-4 fs-1"></i><i class="fa-brands fa-instagram ps-4 fs-1"></i>
+        </div>
+      </div>
+    </section>
 
 
-    </main>
+  </main>
 
 
+  <footer class="bg-secondary py-4">
+    <p class="text-center mb-0"><i class="fa-brands fa-github pe-2"></i><a class="link-light text-decoration-none" href="https://github.com/pedrosantayana/diw-pucmg">Repositório</a></p>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>

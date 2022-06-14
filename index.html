@@ -172,23 +172,21 @@
     </section>
     <!-- em destaque -->
     <section id="em_destaque" class="px-5 container-fluid">
-      <div
-        class="d-flex flex-wrap justify-content-center justify-content-md-between justify-content-lg-between align-items-center ">
+      <!-- <div
+        class="d-flex flex-wrap justify-content-md-between justify-content-lg-between align-items-center ">
         <h1 class="py-3">Em destaque</h1>
-        <div class="dropdown">
-          <button class="btn btn-light btn-outline-dark dropdown-toggle fw-bold" type="button" id="dropdownCategorias"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            Categoria: TODOS
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownCategorias">
-            <li><a class="dropdown-item" href="#">Aventura</a></li>
-            <li><a class="dropdown-item" href="#">Romance</a></li>
-            <li><a class="dropdown-item" href="#">Comédia</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="pt-3 d-flex justify-content-between flex-wrap flex-lg-nowrap">
+        <div class="row justify-content-end">
+          <select id="feed-dropdown" class="col-1 form-select btn btn-light btn-outline-dark" aria-label="Default select example">
+            <option value="1" selected>Filmes populares</option>
+            <option value="2">Filmes no Cinema</option>
+            <option value="3">Séries de TV</option>
+          </select>
+        </div>
+      </div> -->
+      <h1 class="py-3">Filmes populares</h1>
+
+      <div id="feed" class="pt-3 d-flex justify-content-between flex-wrap flex-lg-nowrap">
         <div class="p-2 mt-3">
           <img src="imagens/poster1.jpg" class="img-fluid" alt="Poster">
         </div>
@@ -394,6 +392,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
 
 </body>
 

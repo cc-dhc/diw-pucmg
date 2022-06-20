@@ -39,8 +39,8 @@
               <a class="nav-link" href="#">Novidades</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Search">
+          <form class="d-flex" action="/pesquisa.html">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Search" name="pesquisa">
           </form>
         </div>
       </div>
@@ -171,35 +171,10 @@
       </div>
     </section>
     <!-- em destaque -->
-    <section id="em_destaque" class="px-5 container-fluid">
-      <!-- <div
-        class="d-flex flex-wrap justify-content-md-between justify-content-lg-between align-items-center ">
-        <h1 class="py-3">Em destaque</h1>
+    <section id="feed" class="px-5 container-fluid">
 
-        <div class="row justify-content-end">
-          <select id="feed-dropdown" class="col-1 form-select btn btn-light btn-outline-dark" aria-label="Default select example">
-            <option value="1" selected>Filmes populares</option>
-            <option value="2">Filmes no Cinema</option>
-            <option value="3">Séries de TV</option>
-          </select>
-        </div>
-      </div> -->
       <h1 class="py-3">Filmes populares</h1>
 
-      <div id="feed" class="pt-3 d-flex justify-content-between flex-wrap flex-lg-nowrap">
-        <div class="p-2 mt-3">
-          <img src="imagens/poster1.jpg" class="img-fluid" alt="Poster">
-        </div>
-        <div class="p-2 mt-3">
-          <img src="imagens/poster2.jpg" class="img-fluid" alt="Poster">
-        </div>
-        <div class="p-2 mt-3">
-          <img src="imagens/poster3.jpg" class="img-fluid" alt="Poster">
-        </div>
-        <div class="p-2 mt-3">
-          <img src="imagens/poster4.jpg" class="img-fluid" alt="Poster">
-        </div>
-      </div>
       <!-- botão -->
       <div class="d-flex justify-content-lg-end justify-content-center pt-3">
         <button type="button" class="btn btn-outline-dark fw-bold">Carregar mais filmes</button>

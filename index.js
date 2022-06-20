@@ -5,7 +5,7 @@ document.onload = event => {
   updateFeed();
 }
 
-function updateFeed() {
+function appendFilms() {
   console.log("Updating feed");
   fetch("https://api.themoviedb.org/3/movie/popular", {
     api_key: apiKey,
@@ -18,9 +18,9 @@ function updateFeed() {
         card.innerHTML = `
           <img src="${film.poster_path}" class="card-img-top" alt="Poster de filme">
           <div class="card-body">
-          <h5 class="card-title">${film.title}</h5>
-          <p class="card-text">${film.overview}</p>
-          <a href="detalhes.html?id=${film.id}" class="btn btn-primary">Detalhes</a>
+            <h5 class="card-title">${film.title}</h5>
+            <p class="card-text">${film.overview}</p>
+            <a href="detalhes.html?id=${film.id}" class="btn btn-primary">Detalhes</a>
           </div>
         `;
         document.getElementById("feed").appendChild(film);

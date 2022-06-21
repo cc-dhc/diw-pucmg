@@ -13,13 +13,8 @@ window.onload = function() {
       .then(jsonResponse => {
         console.log(jsonResponse);
         let main = document.getElementById("main");
-        jsonResponse.results.forEach(film => {
-          let imageUrl;
-          if(film.poster_path == null) {
-            imageUrl = "https://via.placeholder.com/500x600.png?text=Imagem%20n%C3%A3o%20encontrada";
-          } else {
-            imageUrl = "https://image.tmdb.org/t/p/original" + film.poster_path;
-          }
+        jsonResponse.results.filter(film => film.poster_path != null).forEach(film => {
+          
           let card = document.createElement("div");
           card.className = "p-3";
           card.innerHTML = `

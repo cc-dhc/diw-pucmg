@@ -21,14 +21,24 @@ window.onload = function() {
             imageUrl = "https://image.tmdb.org/t/p/original" + film.poster_path;
           }
           let card = document.createElement("div");
-          card.className = "card rounded-3 p-3 mx-sm-5 mx-md-3 mb-sm-5";
-          card.style.maxWidth = "500px";
+          card.className = "p-3";
           card.innerHTML = `
-            <img src="${imageUrl}" class="card-img-top img-fluid" alt="Poster de filme" style="width: 500px; height: 600px">
-            <div class="card-body" style="max-height: 200px;">
-              <h5 class="card-title">${film.title}</h5>
-              <p class="card-text text-truncate" style="-webkit-line-clamp: 4;">${film.overview }<p>
-              <a href="detalhes.html?id=${film.id}" class="btn btn-dark">Detalhes</a>
+            <div class="card col rounded-3 p-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="${imageUrl}" class="img-fluid rounded-start" alt="Poster de filme">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">${film.title}</h5>
+                    
+                    
+                    <div class="d-flex justify-content-end mt-auto">
+                      <a href="detalhes.html?id=${film.id}" class="btn btn-dark">Detalhes</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           `;
           main.appendChild(card);

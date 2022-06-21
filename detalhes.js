@@ -5,9 +5,6 @@ window.onload = function() {
   const id = urlParams.get("id");
   const url = "https://api.themoviedb.org/3/movie/"+id+"?api_key="+apiKey+"&language=pt-BR";
 
-  const genresResponse = await fetch("https://api.themoviedb.org/3/genre/movie/list?api_key="+apiKey+"&language=pt-BR");
-  const genres = await genresResponse.json();
-
   fetch(url)
   .then(response => {
     if(response.ok) {
@@ -21,6 +18,12 @@ window.onload = function() {
         let date = jsonResponse.release_date.split("-");
         date = date.reverse();
         document.getElementById("info").innerText = date.join("/") + " - " + jsonResponse.vote_average.toString()+"/10";
+        jsonResponse.genres.forEach(genre => {
+          let pill = document.createElement("span");
+          pill.className = "badge text-bg-primary";
+          pill.innerText = genre.name;
+          document.getElementById("genres").appendChild(pill);
+        });
       })
       .catch(err => console.log(err));
     }

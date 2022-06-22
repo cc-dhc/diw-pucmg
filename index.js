@@ -1,30 +1,36 @@
-const apiKey = "00172a7b94f3826720f0fc873ed1e470";
+import { api } from "./modules/api.mjs";
+import { cardFilm } from "./modules/components.mjs";
 
-document.onload = event => {
-  console.log("Document loaded");
-  updateFeed();
+const data = api("movie/popular", {
+  "language": "pt-BR",
+  "page": 1,
+  "include_adult": false
+});
+
+var cardArray = [];
+
+if(data) {
+  data.then(data => {
+    data
+      .results
+      .filter(film => film.poster_path)
+      .reverse()
+      .forEach(film => cardArray.push(cardFilm(film)));
+    four();
+  })
 }
 
-function appendFilms() {
-  console.log("Updating feed");
-  fetch("https://api.themoviedb.org/3/movie/popular", {
-    api_key: apiKey,
-    language: "pt-BR"
-  })
-    .then(response => {
-      response.json().results.forEach(film => {
-        let card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <img src="${film.poster_path}" class="card-img-top" alt="Poster de filme">
-          <div class="card-body">
-            <h5 class="card-title">${film.title}</h5>
-            <p class="card-text">${film.overview}</p>
-            <a href="detalhes.html?id=${film.id}" class="btn btn-primary">Detalhes</a>
-          </div>
-        `;
-        document.getElementById("feed").appendChild(film);
-      });
-    })
-    .catch(error => console.log(error));
+document.getElementById("more").onclick = four;
+function four() {
+  for (let i = 0; i < 4; i++) {
+    let card = cardArray.pop();
+    if(card) {
+      document.getElementById("feed").appendChild(card);
+      continue;
+    }
+    break;
+  }
+  if(cardArray.length == 0) {
+    document.getElementById("more").remove()
+  }
 }

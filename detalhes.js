@@ -8,33 +8,30 @@ const data = api(`movie/${id}`, {
 
 if(data) {
   data.then(film => {
-    console.log(film);
-    let card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-      <div class="row g-0">
-        <div class="col-md-4 p-3">
-          <img src="https://image.tmdb.org/t/p/original${film.poster_path}" class="img-fluid rounded-start" alt="Poster de filme">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">${film.title}</h5>
-            <p class="card-text">${film.overview}</p>
-            <p class="card-text"><small class="text-muted">${film.release_date.split("-").reverse().join("/")} - ${film.vote_average}/10</small></p>
-            <div id="genres" class="container-fluid"></div>
-            <div class="d-flex h-100 bg-primary justify-content-end">
-              <a href="${film.homepage}" class="btn btn-dark">Site do filme</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
+    document.getElementById("poster").src = `https://image.tmdb.org/t/p/original${film.poster_path}`;
+    document.getElementById("title").innerText = film.title;
+    document.getElementById("overview").innerHTML = film.overview;
+    document.getElementById("date").innerText = film.release_date.split("-").reverse().join("/")+" ";
+    document.getElementById("site").href = film.homepage;
+    
+    let star = document.createElement("i");
+    star.className = "fa-solid fa-star";
+  
+    let half_star = document.createElement("i");
+    half_star.className = "fa-solid fa-star-half-stroke";
+  
+    let a = Math.round(film.vote_average * 2);
+
+    for (let i = 0; i < a/4; i++) {
+      document.getElementById("votes").appendChild(star.cloneNode());
+    }
+    if(a%2==1) document.getElementById("votes").appendChild(half_star);
+
     film.genres.forEach(genre => {
       let pill = document.createElement("div");
-      pill.className = "badge text-bg-primary m-2";
+      pill.className = "badge text-bg-dark me-2";
       pill.innerText = genre.name;
-      card.querySelector("#genres").appendChild(pill);
+      document.getElementById("genres").appendChild(pill);
     });
-    document.getElementById("main").appendChild(card);
   })
 }
